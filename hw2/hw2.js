@@ -1,241 +1,87 @@
-/*Масиви та об'єкти:
-- Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-- Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
-- Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
-- Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача*/
+//- Нам дано масив друзів let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"]; Потрібно зробити перевірку якщо
+//кількість елементів у масиві більше або дорівнює 3, то виводиться повідомлення про те, що це великий масив, в якому  3 і більше елементи.
+//    Інакше слід вивести на екран повідомлення про те, що це маленький масив, в якому менше 3-х елементів.
+
+//let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"]
+
+ //   if (friends.length >= 3){
+ //       console.log('big')
+ //   } else {
+//      console.log('little')
+//    }
 
 
-let arr1 = [1,2,3,4,5,6,7,8,9,10]
-
-console.log(arr1[0], arr1[1], arr1[2], arr1[3], arr1[4], arr1[5], arr1[6], arr1[7], arr1[8], arr1[9]);
-
-
-let book = {
-    title: 'Necronomicon',
-    pageCount: '666',
-    genre: 'horror'
-}
-
-let book1 = {
-    title: 'The Lord of the Rings',
-    pageCount: '777',
-    genre: 'fantasy'
-}
-
-let book2 = {
-    title: 'Dandelion wine',
-    pageCount: '555',
-    genre: 'science fiction'
-}
+//- Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
+//    Знайти, яке з них є середнім (більше одного, але менше за інше). Перевірити, чи знаходиться перше число між двома іншими.
 
 
-
-let book3 = {
-    title: 'Before They Are Hanged',
-    pageCount: '666',
-    genre: 'military fantasy',
-    authors: [
-        {name: 'Joe Abercrombie', age: 48}
-    ]
-}
-
-let book4 = {
-    title: 'Volunteers of Eternity',
-    pageCount: '777',
-    genre: 'fantasy',
-    authors: [
-        {name: "Max Frei", age: 64},
-    ]
-}
+// let arrNum = [1,2,3]
+//if (arrNum[0]>arrNum[1]&& arrNum[0]>arrNum[2]){
+//    console.log('0 biggest')
+//}
+//else if (arrNum[1]>arrNum[0] && arrNum[1]>arrNum[2]){
+//    console.log('1 biggest')
+//}
+//else if (arrNum[2]>arrNum[0] && arrNum[2]>arrNum[1]) {
+//    console.log('2 biggest')
+//}
+//else {
+//    console.log('equal')
+//}
 
 
-let book5 = {
-    title: 'Reaper Man',
-    pageCount: '555',
-    genre: 'fantasy',
-    authors: [
-        {name: 'Terry Pratchett', age: 75}
-    ]
-}
+//if (secondNumber < firstNumber && firstNumber < thirdNumber) {
+    // Если это условие истинно, то код внутри этого блока выполнится.
+ //   console.log(`${firstNumber} находится между ${secondNumber} и ${thirdNumber}`);
+//} else {
+    // Если условие ложно, то выполнится код внутри этого блока.
+//    console.log(`${firstNumber} не находится между ${secondNumber} и ${thirdNumber}`);
+//}
 
 
-let users = [
-    { name: 'user1', username: 'user1', password: 'hfkcyk788' },
-    { name: 'user2', username: 'user2', password: '9pybhc' },
-    { name: 'user3', username: 'user3', password: '436u5746' },
-    { name: 'user4', username: 'user4', password: 'agnbofvnsJl' },
-    { name: 'user5', username: 'user5', password: '9vasgdnfmg' },
-    { name: 'user6', username: 'user6', password: '4e657mr,tiy' },
-    { name: 'user7', username: 'user7', password: 'SDzFDXGC' },
-    { name: 'user8', username: 'user8', password: 'faedsfcgvhbj' },
-    { name: 'user9', username: 'user9', password: '9999999999999' },
-    { name: 'user10', username: 'user10', password: 'sdfrtgyh' },
-];
+//- Перепишіть конструкцію if з використанням умовного оператора '?':
+//let result;
+//if (a + b < 4) {
+//    result = 'Мало';
+//} else {
+//    result = 'Багато';
+//}
 
-console.log(
-    users[0].password,
-    users[1].password,
-    users[2].password,
-    users[3].password,
-    users[4].password,
-    users[5].password,
-    users[6].password,
-    users[7].password,
-    users[8].password,
-    users[9].password
-);
+//let result = a + b < 4 ? 'мало' : 'багато'
 
-/*Логічні розгалуження:
-- Є змінна х, якій ви надаєте довільне числове значення.
-    Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
-- Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
-(в першу, другу, третю или четверту частину години).
-- У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
-- Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
-    - Користувач вводить або має два числа.
-        Потрібно знайти та вивести максимальне число з тих двох .
-        Також потрібно врахувати коли введені рівні числа.*/
+//- Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
+//напишіть це тернарним оператором
+
+//let x = 9
 
 
-let x = +prompt('enter eny number');
+//let result = x > 0 ? 'позитивне' : x < 0 ? 'негативне' : 'нуль';
 
-if ( x !=0 ) {
-    console.log('Вірно')
-} else {
-    console.log('Невірно')
-}
+//let test = true;
 
-
-let time = +prompt('enter minute count (from 0 to 60)');
-
-if (time >= 0 && time <= 15) {
-    console.log('1/4');
-} else if (time > 15 && time <= 30) {
-    console.log('2/4');
-} else if (time > 30 && time <= 45) {
-    console.log('3/4');
-} else if (time > 45 && time <= 60) {
-    console.log('4/4');
-} else {
-    console.log('enter num from 0 to 60 only');
-}
-
-let date = +prompt('enter date count (from 0 to 31)');
-
-if (date >= 1 && date <= 10) {
-    console.log('1/3');
-} else if (date > 10 && date <= 20) {
-    console.log('2/3');
-} else if (date > 20 && date <= 31) {
-    console.log('3/3');
-} else {
-    console.log('enter num from 0 to 31 only');
-}
-
-let day = prompt('Enter a day of the week');
-
-switch(day){
-    case '1':
-        console.log("Monday");
-        break;
-
-    case '2':
-        console.log("Tuesday");
-        break;
-
-    case '3':
-        console.log("Wednesday");
-        break;
-
-    case '4':
-        console.log("Thursday");
-        break;
-
-    case '5':
-        console.log("Friday");
-        break;
-
-    case '6':
-        console.log("Saturday");
-        break;
-
-    case '7':
-        console.log("Sunday");
-        break;
-
-    default:
-        console.log("from 1 to 7 only");
-}
+//let result = test ? 'Вірно' : 'Неправильно';
+//console.log(result);
 
 
-let x = +promt('enter first nimber')
-
-let y = +promt('enter second number')
-
-if (x > y){
-    console.log('x')
-}
-
-else if (x < y) {
-    console.log('y')
-}
-
-else if ( x === y){
-    console.log ('equal')
-}
-
-else {
-    console.log('error')
-}
+//- Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
+//Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: "Не знаєте? ECMAScript!"
 
 
-/*- є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
-    за допомоги  оператора || буде присвоювати змінній х значення "default"
-     якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+ //   - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
+//Користувач вводить номер квартири просто в змінні або через prompt('') .
+//    Програма повинна зазначити, в якому під'їзді знаходиться дана квартира.
 
 
-- з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray.
- За допомоги іф перевірити кожен його елемент на тривалість навчання.
-У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".*/
+//- Ми маємо змінну number в яку користувач задає числове значення,  якщо змінна рівна 10 вивести повідомлення ВІРНО, якщо змінна не рівна 10 - тоді НЕВІРНО
 
 
-let x = prompt('Enter anything') || 'default';
-
-if (x) {
-    console.log('x is ok');
-} else {
-    console.log('x is false');
-}
+//- Задача-гра "чи ми йдемо сьогодні в OKTEN на навчання?".
+//    Змінна, яка характеризує температуру. Якщо температура від +10 до +22 вивести повідомлення що ми йдемо ВЧИТИСЯ .
+//    Якщо інша темпаретура, тоді виводимо повідомлення що сидимо вдома і вчимося ОНЛАЙН
 
 
-let coursesAndDurationArray = [
-    {title: 'JavaScript Complex', monthDuration: 5},
-    {title: 'Java Complex', monthDuration: 6},
-    {title: 'Python Complex', monthDuration: 6},
-    {title: 'QA Complex', monthDuration: 4},
-    {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4}
-];
+//- За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
+//    числа нам дається приз. (Авто, Мото, Телефон, і т.д ) і якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
 
-if (coursesAndDurationArray[0].monthDuration > 5){
-    console.log('Супер')
-}
-else if (coursesAndDurationArray[1].monthDuration > 5){
-    console.log('Супер')
-}
-else if (coursesAndDurationArray[2].monthDuration > 5){
-    console.log('Супер')
-}
-else if (coursesAndDurationArray[3].monthDuration > 5){
-    console.log('Супер')
-}
-else if (coursesAndDurationArray[4].monthDuration > 5){
-    console.log('Супер')
-}
-else if (coursesAndDurationArray[5].monthDuration > 5){
-    console.log('Супер')
-}
 
-else {
-    console.log('sorry')
-}
+

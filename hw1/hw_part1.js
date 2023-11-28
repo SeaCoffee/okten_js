@@ -57,3 +57,13 @@ console.log(typeof b, b)
 
 let c = true;
 console.log(typeof c)
+
+
+let x = prompt('Enter anything') || 'default';
+
+if (x) {
+    console.log('x is ok');
+} else {
+    console.log('x is false');
+}
+
