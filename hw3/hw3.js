@@ -152,7 +152,7 @@ let users = [
 - користувачів які старші за 30 років
 */
 
-let users = [
+/*let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
@@ -192,3 +192,6 @@ for (const user of users) {
 }
 
 */
+let numbers = [1, 2, 3]
+numbers[1] = 4
+console.log(numbers)

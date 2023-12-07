@@ -1,6 +1,6 @@
 /*- створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 
-function squareRectangle(a,b){
+squareRectangle = (a,b) => {
     return a * b
 }
 
@@ -105,6 +105,7 @@ function less(array){
 
     for (let i = 1; i < array.length; i++) {
         if (array[i] < least) {
+            [i] < least) {
             least = array[i]
         }
     }
@@ -164,3 +165,14 @@ function exchange(currency, sum) {
 }
 
 console.log(exchange('usd', 10000)) */
+
+
+let arr = [{id: 1, name: 'skb', age: 18}, {id: 24, name: 'ekd', age: 34}]
+
+function list4(array) {
+    for (const item of array) {
+        document.write(`<div>${item.id},${item.name},${item.age}</div>`)
+    }
+}
+
+list4(arr)
