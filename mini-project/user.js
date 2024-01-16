@@ -7,17 +7,13 @@ async function getUser() {
             let userDiv = document.createElement("div")
             userDiv.className = 'userFullInfo'
             userDiv.innerHTML = `
-                <p>id: ${user.id}</p>
-                <p>name: ${user.name}</p>
-                <p>username: ${user.username}</p>
+                <p>id: ${user.id}, name: ${user.name}, username: ${user.username} </p>
                 <p>email: ${user.email}</p>
                 <p>address: street ${user.address.street}, suite ${user.address.suite}, city ${user.address.city}, zipcode ${user.address.zipcode}</p>
                 <p>geo: lat: ${user.address.geo.lat}, lng: ${user.address.geo.lng}</p>
                 <p>phone: ${user.phone}</p>
                 <p>website: ${user.website}</p>
-                <p>company: ${user.company.name}</p>
-                <p>catchPhrase: ${user.company.catchPhrase}</p>
-                <p>bs: ${user.company.bs}</p>`
+                <p>company: ${user.company.name}, catchPhrase: ${user.company.catchPhrase}, bs: ${user.company.bs}</p>`
 
             document.body.appendChild(userDiv)
 
